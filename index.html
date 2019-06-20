@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Diseño basado en la Plantilla de:  https://www.codeply.com/render/KrUO8QpyXP -->
+
+    <meta charset="utf-8">
+    <title>Curso de Bootstrap</title>
+    <meta name="description" content="A Bootstrap 4 admin dashboard theme that will get you started. The sidebar toggles off-canvas on smaller screens. This example also include large stat blocks, modal and cards. The top navbar is controlled by a separate hamburger toggle button." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body >
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary mb-3">
+    <div class="flex-row d-flex">
+        <button type="button" class="navbar-toggler mr-2 " data-toggle="offcanvas" title="Toggle responsive left sidebar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#" title="Free Bootstrap 4 Admin Template"><h4 class="text-light font-italic">✔️Aprender</h4></a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="collapsingNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio <span class="sr-only">Inicio</span></a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#myAlert" data-toggle="collapse">Alert</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">❤️Lista de deseos</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid" id="main">
+    <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-md-3 col-lg-2 sidebar-offcanvas bg-light pl-0" id="sidebar" role="navigation">
+            <ul class="nav flex-column sticky-top pl-0 pt-5 mt-3">
+                <li class="nav-item"><a class="nav-link" href="#">Redes y seguridad</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#submenu1" data-toggle="collapse" data-target="#submenu1">Desarrollo▾</a>
+                    <ul class="list-unstyled flex-column pl-3 collapse" id="submenu1" aria-expanded="false">
+                       <li class="nav-item"><a class="nav-link" href="">Desarrollo web</a></li>
+                       <li class="nav-item"><a class="nav-link" href="">Desarrollo de videojuegos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Negocios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Finanzas y contabilidad</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Diseño</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Marketing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Fotografía</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Música</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Estilo de vida</a></li>
+            </ul>
+        </div>
+        <!--/col-->
+
+        <div class="col main pt-5 mt-3">
+            <h1 class="display-4 d-none d-sm-block">
+                Curso de Bootstrap
+            </h1>
+            <p class="lead d-none d-sm-block">Bienvenidos, ¡Es hora de aprender a usar Bootstrap!</p>
+
+            <div class="alert alert-warning fade collapse" role="alert" id="myAlert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <strong>Holi ☺️!</strong>  Esto es un "Alert" en Bootstrap...
+            </div>
+            <div class="row mb-3 container">
+                <div class="col-xl-3 col-sm-6 py-2">
+                    <div class="card bg-success text-white h-100">
+                        <div class="card-body bg-success">
+                            <div class="rotate">
+                                <i class="fa fa-user fa-4x"></i>
+                            </div>
+                            <h6 class="text-uppercase">Usuarios</h6>
+                            <h1 class="display-4">5.693</h1>
+                            <p>estudiantes inscritos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="color col-md-9 py-2">
+                    <h4>Lo que aprenderás</h4>
+                    <ul>
+                        <li class="flecha">Aprenderás a trabajar con la grid de bootstrap </br>para crear sitios web modernos que antes no podiamos</li>
+                        <li class="flecha">Aprenderás a crear complejos sitios web desde cero</li>
+                        <li class="flecha">Aprenderás a crear un portafolio de trabajos profesional</li>
+                        <li class="flecha">Aprenderás a crear incluso tu propia red social estilo facebook</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-3 container">
+                <div class="col-xl-3 col-sm-6 py-2">
+                    <div class="card text-white bg-danger h-100">
+                        <div class="card-body bg-danger">
+                            <div class="rotate">
+                                <i class="fa fa-list fa-4x"></i>
+                            </div>
+                            <h6 class="text-uppercase">Precio</h6>
+                            <h1 class="display-4">12,99 $</h1>
+                            <p><span>20% de descuento</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="color col-md-9 py-2">
+                        <h4>Este curso incluye</h4>
+                        <ul>
+                            <li class="flecha">19 horas de vídeo bajo demanda</li>
+                            <li class="flecha">1 artículo</li>
+                            <li class="flecha">Acceso de por vida</li>
+                            <li class="flecha">Acceso en dispositivos móviles y TV</li>
+                            <li class="flecha">Certificado de finalización</li>
+                        </ul>
+                    </div>
+            </div>
+            <!--/row-->
+
+            <hr>
+            <div class="row placeholders mb-3">
+                <h4 class="container">Ingrese los siguientes datos:</h4>
+                <br/><br/>
+                <form class="needs-validation container" novalidate>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                        <label for="validationCustom01">Primer nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                        <div class="valid-feedback">
+                            ¡Correcto!
+                        </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                        <label for="validationCustom02">Segundo nombre</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                        <div class="valid-feedback">
+                            ¡Correcto!
+                        </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                        <label for="validationCustomUsername">Usuario</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                            Please choose a username.
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                        <label for="validationCustom03">Ciudad</label>
+                        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                        <div class="invalid-feedback">
+                            Por favor, proporcione una ciudad válido.
+                        </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                        <label for="validationCustom04">Departamento</label>
+                        <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                        <div class="invalid-feedback">
+                                Por favor, proporcione un departamento válido.
+                        </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                        <label for="validationCustom05">Código Postal</label>
+                        <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                        <div class="invalid-feedback">
+                            Por favor, proporcione un código postal válido.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Aceptar los términos y condiciones.
+                        </label>
+                        <div class="invalid-feedback">
+                            Usted debe estar de acuerdo antes de enviar.
+                        </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Enviar formulario</button>
+                </form>
+            </div>
+
+            <a id="features"></a>
+            <hr>
+            <div class = "row container">
+                <div class="col-xs-12 col-sm-6">
+                    <p class="text-left">
+                        <h3>¿Qué es Bootstrap?</h3>
+                        Bootstrap, es un framework originalmente creado por Twitter, que permite crear interfaces web 
+                        con CSS y JavaScript, cuya particularidad es la de adaptar la interfaz del sitio web al tamaño 
+                        del dispositivo en que se visualice. Es decir, el sitio web se adapta automáticamente al tamaño de una PC, 
+                        una Tablet u otro dispositivo. Esta técnica de diseño y desarrollo se conoce como “responsive design” 
+                        o diseño adaptativo.
+                    </p>
+                </div>
+                
+                <div class="color col-xs-12 col-sm-6">
+                    <p class="text-left">
+                        <h3>Instalar Bootstrap</h3>
+                        Bootstrap se puede instalar de distintas formas. Una forma sencilla de hacerlo es visitar la página oficial 
+                        de Bootstrap y descargar el paquete.</br>
+                        De esta forma, puedes tener los archivos de este framework en tu servidor.<br>
+                        El paquete de descarga lo puedes descomprimir en la raiz de tu proyecto o en el directorio que tu quieras.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col-lg-3 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/encabezado.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Layouts</h4>
+                            <p class="card-text">Flexbox provides simpler, more flexible layout options like vertical centering.</p>
+                            <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                    <div class="card card-inverse bg-inverse mt-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Flexbox</h3>
+                            <p class="card-text">Flexbox is now the default, and Bootstrap 4 supports SASS out of the box.</p>
+                            <a href="#" class="btn btn-outline-secondary">Outline</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead class="thead-inverse">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Label</th>
+                                    <th>Header</th>
+                                    <th>Column</th>
+                                    <th>Data</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1,001</td>
+                                    <td>responsive</td>
+                                    <td>bootstrap</td>
+                                    <td>cards</td>
+                                    <td>grid</td>
+                                </tr>
+                                <tr>
+                                    <td>1,002</td>
+                                    <td>rwd</td>
+                                    <td>web designers</td>
+                                    <td>theme</td>
+                                    <td>responsive</td>
+                                </tr>
+                                <tr>
+                                    <td>1,003</td>
+                                    <td>free</td>
+                                    <td>open-source</td>
+                                    <td>download</td>
+                                    <td>template</td>
+                                </tr>
+                                <tr>
+                                    <td>1,003</td>
+                                    <td>frontend</td>
+                                    <td>developer</td>
+                                    <td>coding</td>
+                                    <td>card panel</td>
+                                </tr>
+                                <tr>
+                                    <td>1,004</td>
+                                    <td>migration</td>
+                                    <td>bootstrap 4</td>
+                                    <td>mobile-first</td>
+                                    <td>design</td>
+                                </tr>
+                                <tr>
+                                    <td>1,005</td>
+                                    <td>navbar</td>
+                                    <td>sticky</td>
+                                    <td>jumbtron</td>
+                                    <td>header</td>
+                                </tr>
+                                <tr>
+                                    <td>1,006</td>
+                                    <td>collapse</td>
+                                    <td>affix</td>
+                                    <td>submenu</td>
+                                    <td>flexbox</td>
+                                </tr>
+                                <tr>
+                                    <td>1,007</td>
+                                    <td>layout</td>
+                                    <td>examples</td>
+                                    <td>themes</td>
+                                    <td>grid</td>
+                                </tr>
+                                <tr>
+                                    <td>1,008</td>
+                                    <td>migration</td>
+                                    <td>bootstrap 4</td>
+                                    <td>flexbox</td>
+                                    <td>design</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+
+            <a id="more"></a>
+            <hr>
+            <h2 class="sub-header mt-5">Use card decks for equal height rows of cards</h2>
+            <div class="mb-3">
+                <div class="card-deck">
+                    <div class="card card-inverse card-success text-center">
+                        <div class="card-body">
+                            <blockquote class="card-blockquote">
+                                <p>It's really good news that the new Bootstrap 4 now has support for CSS 3 flexbox.</p>
+                                <footer>Makes flexible layouts <cite title="Source Title">Faster</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="card card-inverse card-danger text-center">
+                        <div class="card-body">
+                            <blockquote class="card-blockquote">
+                                <p>The Bootstrap 3.x element that was called "Panel" before, is now called a "Card".</p>
+                                <footer>All of this makes more <cite title="Source Title">Sense</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="card card-inverse card-warning text-center">
+                        <div class="card-body">
+                            <blockquote class="card-blockquote">
+                                <p>There are also some interesting new text classes for uppercase and capitalize.</p>
+                                <footer>These handy utilities make it <cite title="Source Title">Easy</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="card card-inverse card-info text-center">
+                        <div class="card-body">
+                            <blockquote class="card-blockquote">
+                                <p>If you want to use cool icons in Bootstrap 4, you'll have to find your own such as Font Awesome or Ionicons.</p>
+                                <footer>The Glyphicons are not <cite title="Source Title">Included</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+
+            <a id="flexbox"></a>
+            <hr>
+            <div class="row my-4 container">
+                <div class="col-xs-12, col-sm-6, col-md-4">
+                    <button class="btn btn-info btn btn-primary btn-lg" type="">Ver más reseñas</button>
+                </div>
+                <div class="col-xs-12, col-sm-6, col-md-4">
+                    <input class="btn btn-success" type="submit" value="Añadir a lista de deseos">
+                </div>
+                <div class="col-xs-12, col-sm-6, col-md-4">
+                    <input class="btn btn-outline-secondary btn-sm" type="button" value="Añadir a la cesta">
+                </div>
+            </div>
+            <div class="row my-4 container-fluid">
+                <div class="col-xs-12 col-sd-12 col-md-12">
+                    <input type="button" class="btn btn-primary btn btn-primary btn-lg btn-block" value="Comprar ahora">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--/.container-->
+<footer>
+    <div class="container-fluid">
+        <p class="text-right small">&copy;2019 Todos los derechos reservados </br>
+            <span class="small">Diseño de página web basado en plantilla de https://www.codeply.com</span>
+        </p>
+    </div>
+</footer>
+
+<!-- Lista de deseos -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">¿Qué es una lista de deseos?</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                    <span class="sr-only">Cerrar</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>La Lista de deseos es la mejor manera de guardar los productos que te gustaría recibir
+                    o enviar como regalo. Puedes crear Listas de deseos para ti o de ideas para regalar. 
+                    Puedes tener tantas Listas de deseos como quieras.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary-outline" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--scripts loaded here-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>   
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
